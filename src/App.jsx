@@ -14,10 +14,13 @@ function App() {
       </header>
       <div className="container">
         <h2>generated password</h2>
-        <p>LENGTH: "the value of slider"</p>
+        <p>LENGTH: the value of slider</p>
         <Slider />
         <p>SETTINGS</p>
-        <SettingComponent text="Include Uppercase" />
+        <SettingComponent text="Include Uppercase" id="switch1" />
+        <SettingComponent text="Include Lowercase" id="switch2" />
+        <SettingComponent text="Include Numbers" id="switch3" />
+        <SettingComponent text="Include Symbols" id="switch4" />
       </div>
     </div>
   );

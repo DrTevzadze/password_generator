@@ -1,11 +1,10 @@
-import React from "react";
-
-function SettingComponent({text}) {
+/* eslint-disable react/prop-types */
+function SettingComponent({ text, id }) {
   return (
     <div className="setting_component">
       <h1>{text}</h1>
-      <input type="checkbox" id="switch" />
-      <label for="switch">Toggle</label>
+      <input type="checkbox" id={id} />
+      <label htmlFor={id}>Toggle</label>
     </div>
   );
 }

@@ -1,5 +1,3 @@
-import React from "react";
-
 function Slider() {
   const handleSliderChange = (event) => {
     const value = event.target.value;
