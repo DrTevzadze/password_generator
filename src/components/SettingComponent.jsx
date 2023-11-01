@@ -1,9 +1,9 @@
 import React from "react";
 
-function SettingComponent() {
+function SettingComponent({text}) {
   return (
-    <div>
-      <h1>component</h1>
+    <div className="setting_component">
+      <h1>{text}</h1>
       <input type="checkbox" id="switch" />
       <label for="switch">Toggle</label>
     </div>

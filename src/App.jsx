@@ -8,7 +8,7 @@ function App() {
       <header>
         <h1>Welcome to Password Generator</h1>
         <h2>
-          Too lazy to come up with a password by yourself? Well, then use this
+          Too lazy to come up with a password on your own? Well, then use this
           app!
         </h2>
       </header>
@@ -17,7 +17,7 @@ function App() {
         <p>LENGTH: "the value of slider"</p>
         <Slider />
         <p>SETTINGS</p>
-        <SettingComponent />
+        <SettingComponent text="Include Uppercase" />
       </div>
     </div>
   );
