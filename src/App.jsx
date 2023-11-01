@@ -1,4 +1,5 @@
 import "./App.css";
+import Slider from "./components/Slider";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         </h2>
       </header>
       <div className="container">
-        <button>Generate Password</button>
+        <h2>generated password</h2>
+        <Slider />
       </div>
     </div>
   );
