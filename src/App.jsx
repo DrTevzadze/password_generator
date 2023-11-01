@@ -1,4 +1,5 @@
 import "./App.css";
+import SettingComponent from "./components/SettingComponent";
 import Slider from "./components/Slider";
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
       </header>
       <div className="container">
         <h2>generated password</h2>
+        <p>LENGTH: "the value of slider"</p>
         <Slider />
+        <p>SETTINGS</p>
+        <SettingComponent />
       </div>
     </div>
   );
