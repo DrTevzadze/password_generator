@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap");
+
 html {
-  font-size: 24px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #12283a;
+  color: #fff;
 }
 
 .main-container {
@@ -18,12 +23,32 @@ header {
 }
 
 .container {
-  background-color: grey;
-  width: 60%;
+  background-color: #0a0e31;
+  width: 500px;
   border: 3px solid black;
   border-radius: 8px;
   box-shadow: 2px 2px 8px;
 }
+
+
+
+.setting_component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #1d2141;
+  border-radius: 10px;
+}
+
+p {
+  color: #858798;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+/* Checkbox Buttons */
 
 input[type="checkbox"] {
   height: 0;
@@ -66,8 +91,4 @@ input:checked + label:after {
 
 label:active:after {
   width: 130px;
-}
-
-.setting_component {
-  display: flex;
 }

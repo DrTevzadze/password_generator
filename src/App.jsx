@@ -1,4 +1,5 @@
 import "./App.css";
+import GeneratePassword from "./components/GeneratePassword";
 import SettingComponent from "./components/SettingComponent";
 import Slider from "./components/Slider";
 
@@ -21,6 +22,7 @@ function App() {
         <SettingComponent text="Include Lowercase" id="switch2" />
         <SettingComponent text="Include Numbers" id="switch3" />
         <SettingComponent text="Include Symbols" id="switch4" />
+        <GeneratePassword />
       </div>
     </div>
   );

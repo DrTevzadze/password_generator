@@ -5,10 +5,3 @@ https://devfolio.co/projects/random-password-generator-5de6
 3. Add "Generate Password" button at the end.
 4. Use as many components for the app as possible.
 5. Style that biatch.
-
-
-1:
-    1. Uppercase
-    2. Lowercase
-    3. Numbers
-    4. Symbols
