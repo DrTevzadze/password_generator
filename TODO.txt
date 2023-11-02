@@ -5,3 +5,6 @@ https://devfolio.co/projects/random-password-generator-5de6
 3. Add "Generate Password" button at the end.
 4. Use as many components for the app as possible.
 5. Style that biatch.
+6. Smooth Slider
+7. Add small box at the bottom of slider that shows the e.target.value.
+8. Maybe change setting container to GRID.

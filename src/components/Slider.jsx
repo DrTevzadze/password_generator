@@ -6,7 +6,7 @@ function Slider() {
 
   return (
     <div className="slider-container">
-      <span>4</span>
+      <span>6</span>
       <input
         type="range"
         name="slider"
