@@ -20,10 +20,6 @@ function App() {
     <div className="main-container">
       <header>
         <h1>Welcome to Password Generator</h1>
-        <h2>
-          Too lazy to come up with a password on your own? Well, then use this
-          app!
-        </h2>
       </header>
       <div className="container">
         <div className="password">
