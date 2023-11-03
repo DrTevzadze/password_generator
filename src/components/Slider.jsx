@@ -16,6 +16,7 @@ function Slider({ value, onChange }) {
         max={16}
         step={1}
         onChange={handleSliderChange}
+        value={value}
       />
       <span>16</span>
     </div>

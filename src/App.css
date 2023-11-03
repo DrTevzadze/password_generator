@@ -7,18 +7,20 @@ html {
   font-family: "Nunito Sans", sans-serif;
   background-color: #12283a;
   color: #fff;
+  text-align: center;
+  overflow: hidden;
 }
 
 .main-container {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
 
-header {
-  padding: 1rem;
+header h1 {
+  font-size: 4rem;
 }
 
 .container {
@@ -112,6 +114,7 @@ label {
   display: block;
   border-radius: 100px;
   position: relative;
+  transition: all 0.3s ease;
 }
 
 label:after {
@@ -162,6 +165,17 @@ label:active:after {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.generate_password button:hover {
+  transform: scale(1.02);
+}
+
+.generate_password button:active {
+  transform: scale(0.98);
 }
 
 .password {
@@ -170,4 +184,5 @@ label:active:after {
   align-items: center;
   background-color: #1d2141;
   border-radius: 10px;
+  height: auto;
 }
