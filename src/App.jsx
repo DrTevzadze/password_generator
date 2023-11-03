@@ -1,6 +1,6 @@
 import "./App.css";
 import GeneratePassword from "./components/GeneratePassword";
-import SettingComponent from "./components/SettingComponent";
+import Settings from "./components/Settings";
 import Slider from "./components/Slider";
 
 function App() {
@@ -18,10 +18,7 @@ function App() {
         <p>LENGTH: the value of slider</p>
         <Slider />
         <p>SETTINGS</p>
-        <SettingComponent text="Include Uppercase" id="switch1" />
-        <SettingComponent text="Include Lowercase" id="switch2" />
-        <SettingComponent text="Include Numbers" id="switch3" />
-        <SettingComponent text="Include Symbols" id="switch4" />
+        <Settings />
         <GeneratePassword />
       </div>
     </div>

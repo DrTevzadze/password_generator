@@ -1,7 +1,7 @@
 
 function GeneratePassword() {
   return (
-    <div>
+    <div className="generate_password">
         <button>Generate Password</button>
     </div>
   )
