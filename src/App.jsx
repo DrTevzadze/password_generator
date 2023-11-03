@@ -6,6 +6,7 @@ import { useState } from "react";
 
 function App() {
   const [length, setLength] = useState(6);
+  const [password, setPassword] = useState("");
 
   return (
     <div className="main-container">
@@ -17,12 +18,11 @@ function App() {
         </h2>
       </header>
       <div className="container">
-        <h2>generated password</h2>
         <p>LENGTH: {length}</p>
         <Slider value={length} onChange={(newValue) => setLength(newValue)} />
         <p>SETTINGS</p>
         <Settings />
-        <GeneratePassword />
+        <GeneratePassword value={password} />
       </div>
     </div>
   );
