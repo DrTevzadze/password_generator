@@ -163,3 +163,11 @@ label:active:after {
   border: none;
   cursor: pointer;
 }
+
+.password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d2141;
+  border-radius: 10px;
+}
