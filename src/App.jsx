@@ -6,7 +6,15 @@ import { useState } from "react";
 
 function App() {
   const [length, setLength] = useState(6);
+  const [includeUppercase, setIncludeUppercase] = useState(false);
+  const [includeLowercase, setIncludeLowercase] = useState(false);
+  const [includeNumbers, setIncludeNumbers] = useState(false);
+  const [includeSymbols, setIncludeSymbols] = useState(false);
   const [password, setPassword] = useState("");
+
+  const handlePasswordGenerated = (newPassword) => {
+    setPassword(newPassword);
+  };
 
   return (
     <div className="main-container">
@@ -18,11 +26,28 @@ function App() {
         </h2>
       </header>
       <div className="container">
+        <p>{password}!</p>
         <p>LENGTH: {length}</p>
         <Slider value={length} onChange={(newValue) => setLength(newValue)} />
         <p>SETTINGS</p>
-        <Settings />
-        <GeneratePassword value={password} />
+        <Settings
+          includeUppercase={includeUppercase}
+          includeLowercase={includeLowercase}
+          includeNumbers={includeNumbers}
+          includeSymbols={includeSymbols}
+          setIncludeUppercase={setIncludeUppercase}
+          setIncludeLowercase={setIncludeLowercase}
+          setIncludeNumbers={setIncludeNumbers}
+          setIncludeSymbols={setIncludeSymbols}
+        />
+        <GeneratePassword
+          length={length}
+          includeUppercase={includeUppercase}
+          includeLowercase={includeLowercase}
+          includeNumbers={includeNumbers}
+          includeSymbols={includeSymbols}
+          onPasswordGenerated={handlePasswordGenerated}
+        />
       </div>
     </div>
   );
