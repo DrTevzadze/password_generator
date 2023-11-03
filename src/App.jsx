@@ -5,7 +5,7 @@ import Slider from "./components/Slider";
 import { useState } from "react";
 
 function App() {
-  const [length, setLength] = useState(6);
+  const [length, setLength] = useState(10);
   const [includeUppercase, setIncludeUppercase] = useState(false);
   const [includeLowercase, setIncludeLowercase] = useState(false);
   const [includeNumbers, setIncludeNumbers] = useState(false);
