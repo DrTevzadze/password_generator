@@ -2,8 +2,11 @@ import "./App.css";
 import GeneratePassword from "./components/GeneratePassword";
 import Settings from "./components/Settings";
 import Slider from "./components/Slider";
+import { useState } from "react";
 
 function App() {
+  const [length, setLength] = useState(6);
+
   return (
     <div className="main-container">
       <header>
@@ -15,8 +18,8 @@ function App() {
       </header>
       <div className="container">
         <h2>generated password</h2>
-        <p>LENGTH: the value of slider</p>
-        <Slider />
+        <p>LENGTH: {length}</p>
+        <Slider value={length} onChange={(newValue) => setLength(newValue)} />
         <p>SETTINGS</p>
         <Settings />
         <GeneratePassword />

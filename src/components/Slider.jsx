@@ -1,7 +1,9 @@
-function Slider() {
+/* eslint-disable react/prop-types */
+function Slider({ value, onChange }) {
   const handleSliderChange = (event) => {
-    const value = event.target.value;
+    const newValue = event.target.value;
     console.log(`Slider Value: ${value}`);
+    onChange(newValue);
   };
 
   return (
