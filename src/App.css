@@ -39,7 +39,6 @@ header h1 {
   gap: 0.5rem;
   background-color: #1d2141;
   border-radius: 10px;
-  margin: 1rem;
 }
 
 p {
@@ -47,7 +46,6 @@ p {
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
-  padding-left: 1.5rem;
 }
 
 /* Slider Styling */
@@ -153,7 +151,6 @@ label:active:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
 }
 
 .generate_password button {
@@ -194,6 +191,14 @@ label:active:after {
   height: auto;
 }
 
+.password,
+.slider-container,
+.setting_component,
+.generate_password,
+p {
+  margin: 1rem;
+}
+
 @media (max-width: 380px) {
   .container {
     width: 80%;
@@ -223,5 +228,15 @@ label:active:after {
   }
   .password h1 {
     font-size: 1.5rem;
+  }
+  .slider-container span {
+    font-size: 1.1rem;
+  }
+  .password,
+  .slider-container,
+  .setting_component,
+  .generate_password,
+  p {
+    margin: 0.8rem 0;
   }
 }
