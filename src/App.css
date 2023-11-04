@@ -28,7 +28,7 @@ header h1 {
   border: 3px solid black;
   border-radius: 8px;
   box-shadow: 0 2px 8px;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   text-align: start;
 }
 
@@ -151,6 +151,7 @@ label:active:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 1rem;
 }
 
 .generate_password button {
@@ -199,7 +200,7 @@ p {
   margin: 1rem;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 560px) {
   .container {
     width: 80%;
   }
@@ -238,5 +239,11 @@ p {
   .generate_password,
   p {
     margin: 0.8rem 0;
+  }
+  .generate_password {
+    padding-top: 0.5rem;
+  }
+  p {
+    font-size: 0.7rem;
   }
 }
