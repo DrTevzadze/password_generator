@@ -8,11 +8,9 @@ html {
   background-color: #12283a;
   color: #fff;
   text-align: center;
-  overflow: hidden;
 }
 
 .main-container {
-  height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -21,6 +19,7 @@ html {
 
 header h1 {
   font-size: 4rem;
+  padding: 3rem;
 }
 
 .container {
@@ -114,9 +113,9 @@ input[type="checkbox"] {
 label {
   cursor: pointer;
   text-indent: -9999px;
-  width: 80px;
+  width: 5rem;
   /* size of ON content */
-  height: 50px;
+  height: 3rem;
   background: grey;
   display: block;
   border-radius: 100px;
@@ -129,8 +128,8 @@ label:after {
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   background: #fff;
   border-radius: 90px;
   transition: 0.4s;
@@ -192,4 +191,33 @@ label:active:after {
   background-color: #1d2141;
   border-radius: 10px;
   height: auto;
+}
+
+@media (max-width: 380px) {
+  .container {
+    width: 80%;
+  }
+  header h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .setting_component {
+    font-size: 0.6rem;
+  }
+  label {
+    height: 2rem;
+    width: 20%;
+  }
+
+  label::after {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  label:active:after {
+    width: 40px;
+  }
+  .generate_password button {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
 }
