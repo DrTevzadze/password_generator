@@ -23,7 +23,9 @@ function App() {
       </header>
       <div className="container">
         <div className="password">
-          <h1>{password}</h1>
+          <h1 style={{ display: password.length === 0 ? "none" : "flex" }}>
+            {password}
+          </h1>
         </div>
         <p>LENGTH: {length}</p>
         <Slider value={length} onChange={(newValue) => setLength(newValue)} />
