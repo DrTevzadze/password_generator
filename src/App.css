@@ -29,6 +29,7 @@ header h1 {
   border-radius: 8px;
   box-shadow: 0 2px 8px;
   padding: 1rem;
+  text-align: start;
 }
 
 .setting_component {
