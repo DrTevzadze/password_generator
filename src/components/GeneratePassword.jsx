@@ -43,7 +43,9 @@ function GeneratePassword({
 
   return (
     <div className="generate_password">
-      <button onClick={handleClick}>Generate Password</button>
+      <button type="submit" onClick={handleClick}>
+        Generate Password
+      </button>
     </div>
   );
 }
