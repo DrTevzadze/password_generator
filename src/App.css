@@ -173,6 +173,7 @@ label:active:after {
   transition: all 0.3s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .generate_password button:hover {
