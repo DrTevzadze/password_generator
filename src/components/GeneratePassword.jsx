@@ -76,7 +76,7 @@ function GeneratePassword({
     setButtonText("Copied!");
 
     setTimeout(() => {
-      setButtonText("Generate Passowrd");
+      setButtonText("Generate Password");
     }, 1500);
   };
 
