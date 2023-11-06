@@ -21,8 +21,15 @@ function App() {
     textArea.select();
 
     navigator.clipboard.writeText(newPassword).then(() => {
-      console.log("Async: Copying to clipboard was successful!");
-      alert("Copied!");
+      try {
+        if (newPassword.length < 1) {
+          console.log("Password field is empty");
+          return newPassword;
+        }
+        console.log("Succesfully copied text");
+      } catch (err) {
+        console.log(`Could not copy text: ${err}`);
+      }
     });
     document.body.removeChild(textArea);
   };
