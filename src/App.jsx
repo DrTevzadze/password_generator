@@ -14,6 +14,10 @@ function App() {
 
   const handlePasswordGenerated = (newPassword) => {
     setPassword(newPassword);
+    if (newPassword.length === 0) {
+      console.log("Password field is empty");
+      return newPassword;
+    }
     // Copy the generated password to the clipboard
     const textArea = document.createElement("textarea");
     textArea.value = newPassword;
@@ -22,10 +26,6 @@ function App() {
 
     navigator.clipboard.writeText(newPassword).then(() => {
       try {
-        if (newPassword.length < 1) {
-          console.log("Password field is empty");
-          return newPassword;
-        }
         console.log("Succesfully copied text");
       } catch (err) {
         console.log(`Could not copy text: ${err}`);
