@@ -42,7 +42,7 @@ function App() {
       <div className="container">
         <div className="password">
           <h1 className={password === "" ? "choose-settings" : password}>
-            {password === "" ? "Please choose settings..." : password}
+            {password === "" ? "Choose settings..." : password}
           </h1>
         </div>
         <p>LENGTH: {length}</p>
