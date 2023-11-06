@@ -152,6 +152,7 @@ label:active:after {
   justify-content: center;
   align-items: center;
   padding-top: 1rem;
+  transition: all 0.5s ease;
 }
 
 .generate_password button {
@@ -182,6 +183,7 @@ label:active:after {
 
 .generate_password button:active {
   transform: scale(0.98);
+  transition: all 0.3s;
 }
 
 .password {

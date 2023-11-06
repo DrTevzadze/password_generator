@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { joinLetters, joinNumbers, joinSymbols } from "../utilities/data";
+import { useState, useEffect } from "react";
 
 function GeneratePassword({
   length,
@@ -61,19 +62,34 @@ function GeneratePassword({
     }
     const shuffleString = stringPass.join("");
 
-    
     return shuffleString;
   };
+
+  const [buttonText, setButtonText] = useState("Generate Password");
 
   const handleClick = () => {
     const newPassword = generatePassword();
     onPasswordGenerated(newPassword);
+    if (newPassword === "") {
+      return newPassword;
+    }
+    setButtonText("Copied!");
+
+    setTimeout(() => {
+      setButtonText("Generate Passowrd");
+    }, 1500);
   };
+
+  useEffect(() => {
+    return () => {
+      clearTimeout();
+    };
+  }, []);
 
   return (
     <div className="generate_password">
       <button type="submit" onClick={handleClick}>
-        Generate Password
+        {buttonText}
       </button>
     </div>
   );
