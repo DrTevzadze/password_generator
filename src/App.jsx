@@ -14,6 +14,17 @@ function App() {
 
   const handlePasswordGenerated = (newPassword) => {
     setPassword(newPassword);
+    // Copy the generated password to the clipboard
+    const textArea = document.createElement("textarea");
+    textArea.value = newPassword;
+    document.body.appendChild(textArea);
+    textArea.select();
+
+    navigator.clipboard.writeText(newPassword).then(() => {
+      console.log("Async: Copying to clipboard was successful!");
+      alert("Copied!");
+    });
+    document.body.removeChild(textArea);
   };
 
   return (

@@ -60,6 +60,8 @@ function GeneratePassword({
       ];
     }
     const shuffleString = stringPass.join("");
+
+    
     return shuffleString;
   };
 
