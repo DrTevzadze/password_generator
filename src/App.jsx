@@ -41,7 +41,9 @@ function App() {
       </header>
       <div className="container">
         <div className="password">
-          <h1>{password}</h1>
+          <h1 className={password === "" ? "choose-settings" : password}>
+            {password === "" ? "Please choose settings..." : password}
+          </h1>
         </div>
         <p>LENGTH: {length}</p>
         <Slider value={length} onChange={(newValue) => setLength(newValue)} />
